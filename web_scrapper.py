@@ -30,7 +30,7 @@ def get_movie_data(driver,page_url):
     
     return movie_list
 
-def save_movie_data(movie_list, file_name="movie_data"):
+def save_movie_data(movie_list, file_name="data/movie_data"):
     with open(file_name+".csv", 'w', newline='') as csv_file:
         csv_writer = csv.writer(csv_file)
         csv_writer.writerow(movie_list[0].get_attributes().keys())
