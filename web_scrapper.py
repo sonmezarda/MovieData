@@ -46,11 +46,6 @@ if __name__ == '__main__':
     driver = webdriver.Firefox()
     movie_data = get_movie_data(driver, page_url)
     save_movie_data(movie_data,"movie_data")
-    """
-    m1 = Movie(1,"a","u1",2000,1,2)
-    m2 = Movie(2,"b","u2",3000,3,4)
-    movie_data = [m1,m2]
-    save_movie_data(movie_data, 'deneme')
-    """
+
 
 
